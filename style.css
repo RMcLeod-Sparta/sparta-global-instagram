@@ -1,8 +1,15 @@
+body{
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
 main{
   background-color: #F5F5F5;
   width: 1000px;
   height: 1000px;
-  margin: 0 auto;
+  margin: auto;
 }
 head{
   background-color: #F5F5F5;
@@ -29,8 +36,10 @@ quadrant{
   border-color:	#808080;
   border-style: solid;
   border-width: 1px;
-  margin-right: 224px;
-  margin-top: 10px;
+  margin-right: 0px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 div{
@@ -76,21 +85,20 @@ w{
 textBox{
   font-size: 16px;
   line-height: 18px;
-  margin: 0px 340px;
   text-align: center;
-  padding: 0;
-  border: 0;
-  font: Helvetica;
   vertical-align: baseline;
-  float: right;
+  float: bottom;
+  margin-top: 90px;
+
 }
 block{
+  float: left;
+  margin-top: 50px;
   display: inline-block;
-   float: right;
-  margin: 30px 220px;
+  width: 321px;
 }
 nav{
-  height: 100px;
+  height: 300px;
 }
 header{
   border-radius: 5px;
@@ -113,3 +121,77 @@ footer{
   color: #808080;
   text-indent: 10px
 }
+h3{
+  vertical-align: text-bottom;
+  padding-left: 16px;
+  display: inline-table;
+  font-size: 17px;
+  margin-right: 0px;
+  float: bottom;
+}
+h4{
+  vertical-align: text-bottom;
+  padding-left: 0px;
+  display: inline-table;
+  font-size: 17px;
+  color: #808080
+}
+logo2{
+  display: none;
+}
+@media screen and (max-width: 1000px){
+  body{
+    width: auto;
+  }
+  main{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    width: auto;
+  }
+  aside{
+    display: none;
+  }
+  section{
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  quadrant{
+    float: right;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+  textBox{
+    padding: auto;
+    padding-top: 300px;
+    line-height: 18px;
+    margin: 10px 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px){
+  section{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 100%;
+    border-width: 0px;
+  }
+  quadrant{
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 100%;
+  border-width: 0px;
+  }
+  block{
+    width: 100%;
+    height: 100%;
+  }
+  logo{
+    display: none;
+  }
+  logo2{
+    display: block;
+  }
